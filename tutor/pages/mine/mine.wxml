@@ -1,0 +1,45 @@
+<view class="container">
+  <view class="profile-section">
+    <view wx:if="{{!userInfo}}" class="login-prompt">
+      <text class="login-text">Login to view favorites</text>
+      <button class="login-btn" open-type="getUserProfile" bindgetuserinfo="handleLogin">
+        WeChat Login
+      </button>
+    </view>
+    
+    <view wx:else class="profile-info">
+      <image class="user-avatar" src="{{userInfo.avatarUrl}}" mode="aspectFill" />
+      <text class="user-name">{{userInfo.nickName}}</text>
+    </view>
+  </view>
+
+  <view class="menu-section">
+    <view class="menu-item" bindtap="goToConsult">
+      <text class="menu-icon">💬</text>
+      <text class="menu-text">Customer Service</text>
+      <text class="menu-arrow">›</text>
+    </view>
+  </view>
+
+  <view class="favorites-section">
+    <view class="section-header">
+      <text class="section-title">My Favorites</text>
+      <text class="section-count">{{favoriteTutors.length}}</text>
+    </view>
+    
+    <view wx:if="{{favoriteTutors.length === 0}}" class="empty-state">
+      <text class="empty-text">No favorites yet</text>
+    </view>
+    
+    <view wx:else class="favorites-list">
+      <view wx:for="{{favoriteTutors}}" wx:key="id" class="favorite-item" bindtap="goToDetail" data-id="{{item.id}}">
+        <image class="favorite-avatar" src="{{item.avatar}}" mode="aspectFill" />
+        <view class="favorite-info">
+          <view class="favorite-name">{{item.name}}</view>
+          <view class="favorite-subject">{{item.subject}} • {{item.grade}}</view>
+          <view class="favorite-fee">{{item.feeRange}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

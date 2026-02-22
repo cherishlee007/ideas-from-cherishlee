@@ -1,0 +1,56 @@
+.waterfall {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+}
+
+.waterfall-column {
+  width: 48%;
+}
+
+.tutor-card {
+  background: white;
+  border-radius: 16rpx;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+}
+
+.tutor-card:active {
+  transform: scale(0.98);
+}
+
+.tutor-avatar {
+  width: 100%;
+  height: 280rpx;
+}
+
+.tutor-info {
+  padding: 24rpx;
+}
+
+.tutor-subject {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 12rpx;
+}
+
+.tutor-grade {
+  font-size: 26rpx;
+  color: #666;
+  margin-bottom: 8rpx;
+}
+
+.tutor-time {
+  font-size: 24rpx;
+  color: #999;
+  margin-bottom: 12rpx;
+}
+
+.tutor-fee {
+  font-size: 28rpx;
+  color: #ff6b6b;
+  font-weight: 600;
+}

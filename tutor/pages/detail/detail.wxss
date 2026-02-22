@@ -1,0 +1,125 @@
+.detail-header {
+  background: white;
+  padding: 40rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.detail-avatar {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 80rpx;
+  margin-right: 30rpx;
+}
+
+.header-info {
+  flex: 1;
+}
+
+.tutor-name {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8rpx;
+}
+
+.tutor-university {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 12rpx;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+}
+
+.rating {
+  font-size: 28rpx;
+  color: #ff6b6b;
+  margin-right: 10rpx;
+}
+
+.reviews {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.detail-section {
+  background: white;
+  padding: 40rpx;
+  margin-bottom: 20rpx;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 30rpx;
+}
+
+.info-row {
+  display: flex;
+  margin-bottom: 20rpx;
+}
+
+.info-label {
+  font-size: 28rpx;
+  color: #666;
+  width: 200rpx;
+}
+
+.info-value {
+  font-size: 28rpx;
+  color: #1a1a1a;
+  flex: 1;
+}
+
+.info-value.fee {
+  color: #ff6b6b;
+  font-weight: 600;
+}
+
+.features-text {
+  font-size: 28rpx;
+  color: #333;
+  line-height: 1.6;
+}
+
+.action-buttons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: 20rpx;
+  background: white;
+  box-shadow: 0 -4rpx 12rpx rgba(0, 0, 0, 0.08);
+}
+
+.btn-favorite {
+  flex: 1;
+  margin-right: 20rpx;
+  background: #f0f0f0;
+  color: #333;
+  border-radius: 50rpx;
+  font-size: 28rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+
+.btn-favorite.favorited {
+  background: #ffe5e5;
+  color: #ff6b6b;
+}
+
+.btn-consult {
+  flex: 1;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 50rpx;
+  font-size: 28rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+}

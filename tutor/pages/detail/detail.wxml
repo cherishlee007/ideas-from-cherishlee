@@ -1,0 +1,47 @@
+<view class="container">
+  <view class="detail-header">
+    <image class="detail-avatar" src="{{tutor.avatar}}" mode="aspectFill" />
+    <view class="header-info">
+      <view class="tutor-name">{{tutor.name}}</view>
+      <view class="tutor-university">{{tutor.university}}</view>
+      <view class="rating-container">
+        <text class="rating">⭐ {{tutor.rating}}</text>
+        <text class="reviews">({{tutor.totalReviews}} reviews)</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="detail-section">
+    <view class="section-title">Teaching Information</view>
+    <view class="info-row">
+      <text class="info-label">Subject:</text>
+      <text class="info-value">{{tutor.subject}}</text>
+    </view>
+    <view class="info-row">
+      <text class="info-label">Grade:</text>
+      <text class="info-value">{{tutor.grade}}</text>
+    </view>
+    <view class="info-row">
+      <text class="info-label">Available Time:</text>
+      <text class="info-value">{{tutor.availableTime}}</text>
+    </view>
+    <view class="info-row">
+      <text class="info-label">Fee Range:</text>
+      <text class="info-value fee">{{tutor.feeRange}}</text>
+    </view>
+  </view>
+
+  <view class="detail-section">
+    <view class="section-title">Personal Features</view>
+    <text class="features-text">{{tutor.features}}</text>
+  </view>
+
+  <view class="action-buttons">
+    <button class="btn-favorite {{isFavorited ? 'favorited' : ''}}" bindtap="toggleFavorite">
+      {{isFavorited ? '❤️ Favorited' : '🤍 Favorite'}}
+    </button>
+    <button class="btn-consult" bindtap="goToConsult">
+      💬 Consult
+    </button>
+  </view>
+</view>

@@ -1,0 +1,26 @@
+<view class="container consult-container">
+  <view class="consult-card">
+    <view class="consult-title">Contact Customer Service</view>
+    <view class="consult-desc">
+      Scan the QR code below to add our official WeChat for manual tutor matching service
+    </view>
+    
+    <view class="qr-container">
+      <image class="qr-code" src="/images/wechat-qr.jpg" mode="aspectFit" />
+      <text class="qr-hint">Long press to save QR code</text>
+    </view>
+    
+    <view class="notice-box">
+      <view class="notice-title">📌 Service Notice</view>
+      <view class="notice-text">
+        • We provide first-time matching service only
+
+        • Manual matching by customer service staff
+
+        • Platform takes no responsibility for offline teaching and transactions
+
+        • Customer service hours: 9:00 AM - 9:00 PM
+      </view>
+    </view>
+  </view>
+</view>

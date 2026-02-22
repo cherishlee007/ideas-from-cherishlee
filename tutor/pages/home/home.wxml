@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="waterfall">
+    <view class="waterfall-column">
+      <block wx:for="{{leftColumn}}" wx:key="id">
+        <view class="tutor-card" bindtap="goToDetail" data-id="{{item.id}}">
+          <image class="tutor-avatar" src="{{item.avatar}}" mode="aspectFill" />
+          <view class="tutor-info">
+            <view class="tutor-subject">{{item.subject}}</view>
+            <view class="tutor-grade">{{item.grade}}</view>
+            <view class="tutor-time">{{item.availableTime}}</view>
+            <view class="tutor-fee">{{item.feeRange}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+    
+    <view class="waterfall-column">
+      <block wx:for="{{rightColumn}}" wx:key="id">
+        <view class="tutor-card" bindtap="goToDetail" data-id="{{item.id}}">
+          <image class="tutor-avatar" src="{{item.avatar}}" mode="aspectFill" />
+          <view class="tutor-info">
+            <view class="tutor-subject">{{item.subject}}</view>
+            <view class="tutor-grade">{{item.grade}}</view>
+            <view class="tutor-time">{{item.availableTime}}</view>
+            <view class="tutor-fee">{{item.feeRange}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
