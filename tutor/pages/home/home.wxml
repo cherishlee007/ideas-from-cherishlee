@@ -1,25 +1,33 @@
 <view class="container">
+  <view wx:if="{{loading}}" class="loading-tip">Loading...</view>
+
   <view class="waterfall">
-    <view class="waterfall-column">
-      <block wx:for="{{leftColumn}}" wx:key="id">
-        <view class="tutor-card" bindtap="goToDetail" data-id="{{item.id}}">
-          <image class="tutor-avatar" src="{{item.avatar}}" mode="aspectFill" />
+    <view class="waterfall-column" >
+  
+      <block wx:for="{{leftColumn}}" wx:key="_id" >
+        <view class="tutor-card" bindtap="goToDetail" data-id="{{item._id}}" style="border: 4px solid greenyellow;">
+          <image class="tutor-avatar" src="/images/avatar.jpg" mode="aspectFill" />
           <view class="tutor-info">
-            <view class="tutor-subject">{{item.subject}}</view>
+            <view style="display: flex;">
+            <view class="tutor-grade">教</view><view class="tutor-subject">{{item.subject}}</view>
+            </view>
             <view class="tutor-grade">{{item.grade}}</view>
             <view class="tutor-time">{{item.availableTime}}</view>
             <view class="tutor-fee">{{item.feeRange}}</view>
           </view>
         </view>
       </block>
+      
     </view>
-    
+
     <view class="waterfall-column">
-      <block wx:for="{{rightColumn}}" wx:key="id">
-        <view class="tutor-card" bindtap="goToDetail" data-id="{{item.id}}">
-          <image class="tutor-avatar" src="{{item.avatar}}" mode="aspectFill" />
+      <block wx:for="{{rightColumn}}" wx:key="_id">
+        <view class="tutor-card" bindtap="goToDetail" data-id="{{item._id}}" style="border: 4px solid greenyellow;">
+          <image class="tutor-avatar" src="/images/avatar.jpg" mode="aspectFill" />
           <view class="tutor-info">
-            <view class="tutor-subject">{{item.subject}}</view>
+            <view style="display: flex;">
+            <view class="tutor-grade">教</view><view class="tutor-subject">{{item.subject}}</view>
+            </view>
             <view class="tutor-grade">{{item.grade}}</view>
             <view class="tutor-time">{{item.availableTime}}</view>
             <view class="tutor-fee">{{item.feeRange}}</view>

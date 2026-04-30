@@ -12,27 +12,39 @@
   </view>
 
   <view class="detail-section">
-    <view class="section-title">Teaching Information</view>
+    <view class="section-title">基本信息</view>
     <view class="info-row">
-      <text class="info-label">Subject:</text>
+      <text class="info-label">教员id:</text>
+      <text class="info-value">{{tutor.id}}</text>
+    </view>
+    <view class="info-row">
+      <text class="info-label">状态:</text>
+      <text class="info-value fee">{{tutor.state}}</text>
+    </view>
+    <view class="info-row">
+      <text class="info-label">教学科目:</text>
       <text class="info-value">{{tutor.subject}}</text>
     </view>
     <view class="info-row">
-      <text class="info-label">Grade:</text>
+      <text class="info-label">教学年级:</text>
       <text class="info-value">{{tutor.grade}}</text>
     </view>
     <view class="info-row">
-      <text class="info-label">Available Time:</text>
+      <text class="info-label">方便的时间:</text>
       <text class="info-value">{{tutor.availableTime}}</text>
     </view>
     <view class="info-row">
-      <text class="info-label">Fee Range:</text>
+      <text class="info-label">预期价格:</text>
       <text class="info-value fee">{{tutor.feeRange}}</text>
+    </view>
+    <view class="info-row">
+      <text class="info-label">详细信息:</text>
+      <view bindtap="viewPdf" class="pdf-btn">PDF</view>
     </view>
   </view>
 
   <view class="detail-section">
-    <view class="section-title">Personal Features</view>
+    <view class="section-title">教员亮点</view>
     <text class="features-text">{{tutor.features}}</text>
   </view>
 
@@ -41,7 +53,7 @@
       {{isFavorited ? '❤️ Favorited' : '🤍 Favorite'}}
     </button>
     <button class="btn-consult" bindtap="goToConsult">
-      💬 Consult
+      💬 点击咨询
     </button>
   </view>
 </view>

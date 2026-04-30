@@ -1,10 +1,17 @@
 {
   "compileType": "miniprogram",
-  "libVersion": "trial",
+  "libVersion": "3.14.2",
   "packOptions": {
     "ignore": [],
     "include": []
   },
+  "cloudfunctionRoot": "cloudfunctions/",
+  "env": {
+    "cloud": "cloud1-1gag4ck977a850c8" 
+  },
+  "appid": "wx0b5b61304f47796a",
+  "projectname": "tutor",
+  "description": "",
   "setting": {
     "coverView": true,
     "es6": true,
@@ -36,6 +43,6 @@
     "tabIndent": "auto",
     "tabSize": 2
   },
-  "appid": "wx67579ec35d8ae2df",
-  "simulatorPluginLibVersion": {}
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate/"
 }

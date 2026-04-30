@@ -123,3 +123,11 @@
   height: 88rpx;
   line-height: 88rpx;
 }
+
+.pdf-btn{
+  color:#1677ff;
+  text-decoration: underline;
+}
+.pdf-btn:active{
+  color: #0e55c2;
+}

@@ -2,6 +2,7 @@
   "pages": [
     "pages/home/home",
     "pages/mine/mine",
+    "pages/logo/logo",
     "pages/detail/detail",
     "pages/consult/consult"
   ],
@@ -15,13 +16,19 @@
         "pagePath": "pages/home/home",
         "iconPath": "images/home.png",
         "selectedIconPath": "images/home-active.png",
-        "text": "Home"
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/logo/logo",
+        "iconPath": "images/logo.png",
+        "selectedIconPath": "images/home-active.png",
+        "text": " "
       },
       {
         "pagePath": "pages/mine/mine",
         "iconPath": "images/mine.png",
         "selectedIconPath": "images/mine-active.png",
-        "text": "Mine"
+        "text": "我的"
       }
     ]
   },
